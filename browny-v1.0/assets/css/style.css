@@ -56,7 +56,7 @@ a,a:hover,a:active,a:focus {
 }
 h1,h2,h3,h4,h5,h6 { 
 	margin: 0;
-	color:#43485c;
+	color:#43485C;
     font-size: 16px;
 	font-family: 'Poppins', sans-serif;
 	text-transform: capitalize;
@@ -64,7 +64,7 @@ h1,h2,h3,h4,h5,h6 {
 p {
 	margin: 0;
 	line-height:1.8;
-	color:#43485c;
+	color:#43485C;
 	font-size:14px;
 	font-family: 'Poppins', sans-serif;
 }
@@ -211,6 +211,10 @@ nav.navbar.bootsnav .navbar-toggle i{color:rgb(255 1 79 );}
 
 
 /*.header-text-area*/
+.header-text
+{
+    margin-top: -120px;
+}
 .header-text h2 {
     color: #fff;
     font-size: 54px;
@@ -243,7 +247,13 @@ nav.navbar.bootsnav .navbar-toggle i{color:rgb(255 1 79 );}
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
 }
-.header-text a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#9f00ff;border: 1px solid #9f00ff;}
+.header-text a:hover{
+     box-shadow: 0 5px 20px rgba(0,0,0,.4);
+     background:rgb(255 1 79 );
+     border: 1px solid rgb(255 1 7);
+      transform: scale(0.5);
+      transition: transform 0.5s ease ;
+    }
 /*.header-text-area*/
 
 /*-------------------------------------
@@ -379,12 +389,17 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 .skill-content{padding: 50px 0 80px;}
 .single-skill-content{padding-top: 100px;}
+.section-heading p{
+    border-bottom: 1px solid #e5ebf2;
+    padding-bottom:30px ;
+    font-size: 16px;
+    color: #999fb3;
+}
 .section-heading h2 {
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #e5ebf2;
+    padding-bottom: 30px;
 }
 .single-progress-txt {
     display: flex;
@@ -602,7 +617,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 --------------------------------------*/
 .portfolio {
     padding:  50px 0 100px;
-    border:  1px solid #e5ebf2;
+   
+}
+.portfolio h2{
+    border-bottom:  1px solid #e5ebf2;
 }
 
 .portfolio-content {padding-top: 100px;}
@@ -697,6 +715,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .contact {
     background: rgba(24, 26, 27, 0.8);;
     padding: 50px 0 100px;
+    border:  0.5px solid #e5ebf2;;
 }
 .single-contact-box {padding-top: 100px;}
 .contact-form  .form-group {
